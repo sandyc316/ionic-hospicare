@@ -1,0 +1,96 @@
+<ion-header no-shadow>
+    <ion-row class="header-background">
+		<ion-col>
+			<ion-navbar hideBackButton="true">
+	        	<ion-title class=" ">FamilyCare</ion-title>
+	    	</ion-navbar>
+		</ion-col>
+		<ion-col>
+		    <div class="align">
+		   		<img src="assets/img/Menu.png" class="icon" (click)="goToMyProfilePage()">
+		    </div>
+		</ion-col>
+	</ion-row>
+</ion-header>
+
+<ion-content no-bounce>
+	<ion-grid>
+
+	    <ion-row class="homepage">
+	    	
+	    	<ion-col class="logo">
+    			<a (click)="goToBookAnAppointmentPage()">
+    				<img src="assets/img/patient_home/Book-an-appointment.png" class="img-size" />
+    				<!-- <ion-label class="grey-text">Book an</ion-label> -->
+    				<ion-label class="grey-text">Appointment</ion-label>
+    			</a>
+	    	</ion-col>
+	    	
+	    	<ion-col class="logo">
+	    		<a (click)="goToDiagnosticsPage()">
+	    			<img src="assets/img/patient_home/Diagnostics.png" class="img-size"/>
+	    			<ion-label class="grey-text">Diagnostics</ion-label>
+	    		</a>
+	    	</ion-col>
+	    	
+	    	<ion-col class="logo">
+	    		<a (click)="goToReportsPage()">
+	    			<img src="assets/img/patient_home/Reports.png" class="img-size"/>
+	    			<ion-label class="grey-text">Reports</ion-label>
+	    		</a>
+	    	</ion-col>
+
+	    </ion-row>
+
+	    <ion-row class="homepage">
+	    	
+	    	<ion-col class="logo">
+    			<a (click)="goToDoctorAtHomePage()">
+    				<img src="assets/img/patient_home/Doctor-at-Home.png" class="img-size" />
+    				<ion-label class="grey-text">Doctor</ion-label>
+    			</a>
+	    	</ion-col>
+	    	
+	    	<ion-col class="logo">
+	    		<a (click)="goToLiveConsultancyPage()" >
+	    			<img src="assets/img/patient_home/Live-consultancy.png" class="img-size"/>
+	    			<ion-label class="grey-text">Live Consultancy</ion-label>
+	    		</a>
+	    	</ion-col>
+	    	
+	    	<ion-col class="logo">
+	    		<a (click)="goToPharmacyPage()">
+	    			<img src="assets/img/patient_home/Pharmacy.png" class="img-size"/>
+	    			<ion-label class="grey-text">Pharmacy</ion-label>
+	    		</a>
+	    	</ion-col>
+
+	    </ion-row>
+
+	    <ion-row class="homepage">
+	    	
+	    	<ion-col class="logo">
+    			<a (click)="goToNursingPage()" >
+    				<img src="assets/img/patient_home/Nursing.png" class="img-size" />
+    				<ion-label class="grey-text">Nursing</ion-label>
+    			</a>
+	    	</ion-col>
+	    	
+	    	<ion-col class="logo">
+	    		<a (click)="goToHealthTipsPage()" >
+	    			<img src="assets/img/patient_home/Health-tip.png" class="img-size"/>
+	    			<ion-label class="grey-text">Health at your tip</ion-label>
+	    		</a>
+	    	</ion-col>
+	    	
+	    	<ion-col class="logo">
+	    		<a (click)="goToSupportPage()" >
+	    			<img src="assets/img/patient_home/support.png" class="img-size"/>
+	    			<ion-label class="grey-text">24/7 Support</ion-label>
+	    		</a>
+	    	</ion-col>
+
+	    </ion-row>
+	</ion-grid>
+
+</ion-content>

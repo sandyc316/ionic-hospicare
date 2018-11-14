@@ -1,0 +1,72 @@
+<ion-header no-shadow>
+	<ion-row class="header-background">
+		<ion-col>
+			<ion-navbar hideBackButton="true">
+	        	<ion-title class=" ">Profile</ion-title>
+	    	</ion-navbar>
+		</ion-col>
+		<ion-col>
+		    <div class="align">
+		   		<img src="assets/img/Menu.png" class="icon" (click)="goToMyProfilePage()">
+		    </div>
+		</ion-col>
+	</ion-row>
+</ion-header>	
+
+<ion-content padding-top class="profile">
+
+	<div class=" horizon-line">
+		<ion-label class="profile-display font">Contact</ion-label>
+		<img src="../../assets/img/profile/Edit.png" class="profile-icon contact-profile">
+	</div>
+
+	<div class="margin horizon-line" >
+		<div class=" align-margin">
+			<ion-input type="text" [(ngModel)]="patient.firstName" placeholder="First Name" class="margin" ></ion-input>
+		</div>
+	</div>
+
+	<div class="margin horizon-line" >
+		<div class=" align-margin">
+			<ion-input type="text" [(ngModel)]="patient.lastName" placeholder="Last Name" class="margin" ></ion-input>
+		</div>
+	</div>
+
+	<div class="margin horizon-line" >
+		<div class=" margin">
+			<ion-input type="text" [(ngModel)]="patient.email" placeholder="example@example.com" class="margin"></ion-input>
+		</div>
+	</div>
+
+	<div class="margin horizon-line" >
+		<div class=" margin">
+			<ion-input type="number" [(ngModel)]="patient.phone" placeholder="0000000000" class="margin"></ion-input>
+		</div>
+	</div>
+
+	<div class=" horizon-line">
+		<ion-label class="profile-display font">Addresses</ion-label>
+		<img src="../../assets/img/profile/Add-item.png" (click)="addAddress()" class="profile-icon contact-profile">
+	</div>
+
+	<ion-list>
+		<ion-item *ngFor="let address of addresses">
+			{{address.address}}
+			<img src="../../assets/img/profile/Edit.png" (click)='editAddress(address)' class="">
+		</ion-item>
+    </ion-list>
+
+</ion-content>
+
+<ion-footer no-shadow>
+	<ion-toolbar position="bottom">
+		<ion-row>
+			<ion-col>
+				<button ion-button color="primary" block (click)="goToMyProfilePage()">Back</button>
+			</ion-col>
+			<ion-col>
+				<button ion-button color="primary" block (click)="saveContactDetails()">Save</button>
+			</ion-col>
+		</ion-row>
+	</ion-toolbar>
+</ion-footer>

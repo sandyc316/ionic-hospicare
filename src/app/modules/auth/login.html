@@ -1,0 +1,31 @@
+<ion-header>
+	<ion-navbar hideBackButton="true" color="primary">
+		<ion-title> {{ Hospicare }} </ion-title>
+		<button ion-button menuToggle icon-only>
+			<ion-icon name="menu"></ion-icon>
+		</button>
+	</ion-navbar>
+</ion-header>
+
+<ion-content padding class="login-page-content">
+	<div class="instructions">
+		<div>
+		{{ Login }}
+		</div>
+		<br>
+	</div>
+	<form [formGroup]="loginForm" (ngSubmit)="loginPage(loginForm.value)">
+		<ion-item>
+			<ion-input [formControl]="loginForm.controls['username']" type="email" required placeholder="Please enter your email"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-input [formControl]="loginForm.controls['password']" required type="password" placeholder="Please enter your password"></ion-input>
+		</ion-item>
+		<button ion-button block>LOGIN</button>
+	</form>
+
+	<button ion-button block (click)="register()">REGISTER</button>
+	<br/>
+	<a href="#" (click)="recover(loginForm.value)">Forgot Password</a>
+
+</ion-content>

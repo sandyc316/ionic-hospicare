@@ -1,0 +1,36 @@
+<ion-header no-shadow>
+	<ion-row class="header-background">
+		<ion-col>
+			<ion-navbar hideBackButton="true">
+	        	<ion-title class=" ">Reports</ion-title>
+	    	</ion-navbar>
+		</ion-col>
+		<ion-col>
+		    <div class="align">
+		   		<img src="../../assets/img/Menu.png" class="icon" (click)="goToMyProfilePage()">
+		    </div>
+		</ion-col>
+	</ion-row>
+</ion-header>
+
+<ion-content padding-top class="reports">
+
+	<div class=" horizon-line">
+		<ion-label class="profile-display mid-font">All Reports</ion-label>
+		<img src="../../assets/img/profile/Edit.png" class="profile-icon contact-profile">
+	</div>
+
+</ion-content>
+
+<ion-footer no-shadow>
+	<ion-toolbar position="bottom">
+		<ion-row>
+			<ion-col>
+				<button ion-button color="primary" block (click)="goToHomePage()">Back</button>
+			</ion-col>
+			<ion-col>
+				<button ion-button color="primary" block (click)="upload()">Upload</button>
+			</ion-col>
+		</ion-row>
+	</ion-toolbar>
+</ion-footer>

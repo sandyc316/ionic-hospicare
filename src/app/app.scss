@@ -1,0 +1,415 @@
+// http://ionicframework.com/docs/v2/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+.toolbar-title-md {
+	font-weight: bolder;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
+
+body {
+  font-family: 'SSFD Regular', sans-serif;
+}
+
+ion-icon {
+  color: #37B6B7;
+
+}
+/* universal classes */
+
+.grey-text {
+  color: #8C8C8C;
+}
+
+.blue-text {
+    color: color($colors, blue);
+}
+
+.black-text {
+    color: black;
+}
+
+
+.light-blue-text {
+    color: color($colors, light-blue);
+}
+
+
+.green-text {
+    color: color($colors, green);
+}
+
+.text-black {
+  color: #000000 !important;
+}
+
+.align-center {
+    text-align: center;
+}
+.align-left {
+    text-align: left;
+}
+.align-right {
+    text-align: right;
+}
+
+.green-bg-btn {
+    background-color: color($colors, green);
+    color: white;
+    margin: 0px;
+    padding: 10px 22px;
+    height: auto;
+}
+
+.display-block {
+    display: block;
+}
+
+
+
+.header-title {
+    .toolbar-title {
+        font-size: 16px !important;
+        font-weight: bold !important;
+        background-color: #00001a;
+        text-align: left;
+        color: white;
+    }
+}
+
+.header {
+
+    .toolbar {
+        padding: 0px;
+    }
+    .toolbar-background {
+        background: dimgray !important;
+    }
+}
+
+.headerLogo {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.toggle-wrapper.mentee-mentor-toggle {
+    position: relative;
+    padding: 15px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    text-align: center;      
+
+    .ion-label {
+        padding-top: 0px;
+    }
+
+    .toggle-left-label, .toggle-right-label, .toggle, .item-block, ion-label{
+        display: inline-block;
+    }
+
+   .toggle-left-label {
+        position: absolute;
+        top: 5px;
+        left: 25%;
+   }
+
+    .toggle-right-label {
+        position: absolute;
+        top: 5px;
+        right: 25%;
+   }
+
+    .item-block {
+        width: auto;
+        padding-left: 0px;
+        background-color: transparent;
+
+        .item-inner {
+            border-bottom: 0px;
+        }
+    }
+}
+
+.header-background {
+    background-color: dimgray;
+
+    .icon {
+        width: 25%;
+        margin-top: 10px;
+    }
+
+    .align {
+        text-align: right;
+        margin-right: 25px;
+    }
+}
+
+.toggle-md.toggle-checked .toggle-icon {
+    background-color: color($colors, blue);
+}
+
+.recommended-all-wrapper {
+    padding-left: 10px;
+    padding-right: 10px;
+
+    .button {
+        height: 1.7em;
+    }
+    .grid {
+        padding: 0px;
+
+        .button-inner {
+            font-size: 14px;
+        }
+    }
+}
+
+.title-rating {
+    .item-title {
+        font-weight: bold;
+        padding-bottom: 5px;
+        font-size: 14px;
+    }
+}
+
+
+.item-info {
+    font-size: 12px !important;
+}
+
+.item-city {
+    font-size: 12px !important;
+}
+
+.tab-button-text {
+    text-transform: capitalize;
+}
+
+.select-ios .select-icon {
+  display: none!important;
+}
+
+
+.loading-ios .loading-wrapper {
+    background: transparent !important;
+    color: color($colors, green);
+}
+
+.toast-message {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.success-message {
+     color: color($colors, green);
+}
+
+.error-message {
+     color: red;
+}
+
+.full-image {
+    width: 100%;
+    height: 100%;
+}
+
+ion-icon {
+    &[class*="custom-"] {
+        // Instead of using the font-based icons
+        // We're applying SVG masks
+        mask-size: contain;
+        mask-position: 50% 50%;
+        mask-repeat: no-repeat;
+        background: currentColor;
+        width: 1em;
+        height: 1em;
+    }
+    // custom icons
+    &[class*="custom-icon1"] {
+        mask-image: url(assets/icon/svg/matches-mentee.svg);
+    }
+    &[class*="custom-icon2"] {
+        mask-image: url(../assets/img/customicon2.svg);
+    }
+    &[class*="custom-icon3"] {
+        mask-image: url(../assets/img/customicon3.svg);
+    }
+}
+
+.mail-wrapper {
+    border-bottom:  0.55px solid #c8c7cc;
+}
+
+/* green and blue back button */
+.green {
+    .bar-button-default-ios {
+        color: color($colors, green);
+    }
+
+    .back-button-icon-ios { 
+        color: color($colors, green);
+    }
+
+    .arrow-back {
+        color: color($colors, green);
+    }
+}
+
+.blue {
+    .bar-button-default-ios {
+        color: color($colors, blue);
+    }
+
+    .back-button-icon-ios { 
+        color: color($colors, blue);
+    }
+
+    /* android */
+    .back-button-icon-md {
+        color: color($colors, blue);
+    }
+
+    .arrow-back {
+        color: color($colors, blue);
+    }
+}
+
+/* android input focus css */
+.item-md.item-input.ng-valid.item-input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner, .item-md.item-input.ng-valid.input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner {
+    box-shadow: none !important; 
+    border-bottom-color: #dedede;  
+    
+}
+
+.user-email {
+    &.item-md.item-input.ng-valid.item-input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner, .item-md.item-input.ng-valid.input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner {
+        box-shadow: none !important; 
+        border-bottom-color: transparent !important;  
+        
+    }
+}
+
+.user-password, .user-last-name , .user-first-name, .user-email {
+    &.item-block .item-inner {
+        border-bottom: 0px !important;
+    }
+}
+.item-md.item-input.item-input-has-focus .item-inner, .item-md.item-input.input-has-focus .item-inner {
+    box-shadow: none !important;
+    border-bottom-color: #dedede;  
+    
+}
+
+.item-md.item-block .item-inner {
+        /*border-bottom: 1px solid #dedede !important;*/
+}
+
+.list-md .item-input.ng-invalid.ng-touched:not(.input-has-focus):not(.item-input-has-focus):last-child {
+    box-shadow: none !important;    
+    border-bottom: none !important;
+    border-bottom-color: none !important;
+}
+
+.list-md .item-input.item-input-has-focus:last-child, .list-md .item-input.input-has-focus:last-child {
+    box-shadow: none !important;    
+    border-bottom: none !important;
+    border-bottom-color: none !important;
+}
+
+.list-md .item-input.ng-valid.item-input-has-value:not(.input-has-focus):not(.item-input-has-focus):last-child, .list-md .item-input.ng-valid.input-has-value:not(.input-has-focus):not(.item-input-has-focus):last-child {
+    box-shadow: none !important;    
+    border-bottom: none !important;
+    border-bottom-color: none !important;
+}
+
+/* android ion-title center */
+.title-md.android-title-center {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 90px 1px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.back-button-md {
+    z-index: 99;
+}
+
+.appointment {
+
+    .dropdown-width {
+        max-width: 100%;
+    }
+
+    .font {
+        font-size: 25px;
+        font-weight: bold;
+        color: dimgray;
+    }
+
+    .icon {
+        text-align: right;
+        max-width: 50px;    
+    }
+
+    .margin {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .horizon-line {
+        border-bottom: 1px solid #eee;
+        padding-left: 10px;
+    }
+
+    .margin-md {
+        margin-left: 40px;
+    }
+
+    .mid-font {
+        font-size: 18px;
+    }
+}
+
+.header-icon {
+    width: 50%;
+    margin-top: 10px;
+}
+
+.profile-display {
+    position: absolute;
+
+    .size {
+        max-width: 25px;
+    }
+}
+
+.profile-icon {
+    position: relative;
+
+    .margin {
+        margin-left: 25%;
+    }
+}
+
+.contact-profile {
+    margin-left: 85%;
+    max-width: 10%;
+}

@@ -1,0 +1,82 @@
+{
+    "BACK_BUTTON_TEXT": "Back",
+
+    "NAME": "Name",
+    "EMAIL": "Email",
+    "USERNAME": "Username",
+    "PASSWORD": "Password",
+    "LOGIN": "Sign in",
+    "SIGNUP": "Sign up",
+
+    "TAB1_TITLE": "Matches",
+    "TAB2_TITLE": "Chat",
+    "TAB3_TITLE": "Mentors",
+    "TAB4_TITLE": "Profile",
+
+    "MAP_TITLE": "Map",
+
+    "TUTORIAL_SKIP_BUTTON": "Skip",
+    "TUTORIAL_CONTINUE_BUTTON": "Continue",
+
+    "TUTORIAL_SLIDE1_TITLE": "Hello!",
+    "TUTORIAL_SLIDE1_DESCRIPTION": "MenteeMe will help you to develop successful mentoring experiences. MenteeMe matches you to recommended mentors and facilitates your mentoring relationships.",
+
+    "TUTORIAL_SLIDE2_TITLE": "Mentee",
+    "TUTORIAL_SLIDE2_DESCRIPTION": "A mentee wants to find a mentor. Anybody can be a mentee on MenteeMe. Sign up and look out for recommended mentors.",
+
+    "TUTORIAL_SLIDE3_TITLE": "Mentor",
+    "TUTORIAL_SLIDE3_DESCRIPTION": "A mentor is a credible professional who provides mentoring to others. MenteeMe mentors need to have at least five years of work experience.",
+
+    "TUTORIAL_SLIDE4_TITLE": "Mentee and Mentor",
+    "TUTORIAL_SLIDE4_DESCRIPTION": "If you have the experience to be a mentor and also want to be mentored you can sign up as both a mentee and a mentor.",
+
+    "TUTORIAL_SLIDE5_TITLE": "The Switch",
+    "TUTORIAL_SLIDE5_DESCRIPTION": "If you have signed up as both, use The Switcher to toggle between viewing the app as a mentee and a mentor.",
+
+    "TUTORIAL_SLIDE6_TITLE": "All set",
+    "TUTORIAL_SLIDE6_DESCRIPTION": "Continue to the next screen to begin your journey with MenteeMe.",
+
+    "WELCOME_INTRO": "The starting point for your next great Ionic app",
+
+    "SETTINGS_TITLE": "Settings",
+    "SETTINGS_OPTION1": "Option 1",
+    "SETTINGS_OPTION2": "Option 2",
+    "SETTINGS_OPTION3": "Option 3",
+    "SETTINGS_OPTION4": "Option 4",
+
+    "SETTINGS_PROFILE_BUTTON": "Edit Profile",
+
+    "SETTINGS_PAGE_PROFILE": "Edit Profile",
+
+    "WELCOME_TITLE": "Welcome",
+
+    "LOGIN_TITLE": "Sign in",
+    "LOGIN_ERROR": "Unable to sign in. Please check your account information and try again.",
+    "LOGIN_BUTTON": "Sign in",
+    "SIGNUP_TITLE": "Sign up",
+    "SIGNUP_ERROR": "Unable to create account. Please check your account information and try again.",
+    "SIGNUP_BUTTON": "Sign up",
+
+    "LIST_MASTER_TITLE": "Matches",
+
+    "ITEM_CREATE_TITLE": "New Item",
+    "ITEM_CREATE_CHOOSE_IMAGE": "Add Image",
+
+    "ITEM_NAME_PLACEHOLDER": "Name",
+    "ITEM_ABOUT_PLACEHOLDER": "About",
+
+    "DONE_BUTTON": "Done",
+    "CANCEL_BUTTON": "Cancel",
+    "DELETE_BUTTON": "Delete",
+
+    "CARDS_TITLE": "Social",
+
+    "SEARCH_TITLE": "Search",
+    "SEARCH_PLACEHOLDER": "Search the items list, e.g. \"Donald Duck\"",
+
+    "MENTOR_PROFILE_TITLE": "Mentor profile",
+    "MENTEE_PROFILE_TITLE": "Mentee profile",
+
+    "YOUR_MENTORS_TITLE": "Your Mentors",
+    "YOUR_MENTEES_TITLE": "Your Mentees"
+}

@@ -1,0 +1,85 @@
+<ion-header no-shadow>
+	<ion-row class="header-background">
+		<ion-col>
+			<ion-navbar hideBackButton="true">
+	        	<ion-title class=" ">Profile</ion-title>
+	    	</ion-navbar>
+		</ion-col>
+		<ion-col>
+		    <div class="align">
+		   		<img src="assets/img/Menu.png" class="icon" (click)="goToMyProfilePage()">
+		    </div>
+		</ion-col>
+	</ion-row>
+</ion-header>	
+
+<ion-content padding-top class="profile">
+
+	<div class=" horizon-line">
+		<ion-label class="profile-display font" >Address</ion-label>
+		<img src="../../assets/img/profile/Edit.png" class="profile-icon contact-profile">
+	</div>
+
+	<div class="margin horizon-line" >
+		<ion-select class="dropdown-width" [(ngModel)]="address.tag" placeholder="Address belongs to">
+		    <ion-option value="Home">Home</ion-option>
+		    <ion-option value="Office">Office</ion-option>
+		    <ion-option value="Other">Other</ion-option>
+		</ion-select>
+	</div>
+
+	<div class="margin horizon-line" >
+		<ion-select class="dropdown-width" [(ngModel)]="address.state" placeholder="State">
+		    <ion-option value="Assam">Assam</ion-option>
+		    <ion-option value="Bihar">Bihar</ion-option>
+		    <ion-option value="UP">Uttar Pradesh</ion-option>
+		    <ion-option value="Tamil Nadu">Tamil Nadu</ion-option>
+		    <ion-option value="Karnataka">Karnataka</ion-option>
+		    <ion-option value="Kerala">Kerala</ion-option>
+		</ion-select>
+	</div>
+
+	<div class="margin horizon-line" >
+		<div class=" margin">
+			<ion-input type="text" [(ngModel)]="address.city" placeholder="City" class="margin"></ion-input>
+		</div>
+	</div>
+
+	<div class="margin horizon-line" >
+		<div class=" margin">
+			<ion-input type="text" [(ngModel)]="address.zipcode" placeholder="zipcode" class="margin"></ion-input>
+		</div>
+	</div>
+
+	<div class="margin horizon-line" >
+		<div class=" margin">
+			<ion-input type="text" [(ngModel)]="address.locality" placeholder="Locality" class="margin"></ion-input>
+		</div>
+	</div>
+
+	<div class="margin horizon-line" >
+		<div class=" margin">
+			<ion-input type="text" [(ngModel)]="address.street" placeholder="Street" class="margin"></ion-input>
+		</div>
+	</div>
+	
+	<div class="margin horizon-line" >
+		<div class=" margin">
+			<ion-input type="text" [(ngModel)]="address.address" placeholder="Address" class="margin"></ion-input>
+		</div>
+	</div>
+
+</ion-content>
+
+<ion-footer no-shadow>
+	<ion-toolbar position="bottom">
+		<ion-row>
+			<ion-col>
+				<button ion-button color="primary" block (click)="goToMyContactsPage()">Back</button>
+			</ion-col>
+			<ion-col>
+				<button ion-button color="primary" block (click)="saveAddressDetails()">Save</button>
+			</ion-col>
+		</ion-row>
+	</ion-toolbar>
+</ion-footer>

@@ -1,0 +1,100 @@
+<ion-header no-shadow>
+	<ion-row class="header-background">
+		<ion-col>
+			<ion-navbar hideBackButton="true">
+	        	<ion-title class=" ">Members</ion-title>
+	    	</ion-navbar>
+		</ion-col>
+		<ion-col>
+		    <div class="align">
+		   		<img src="assets/img/Menu.png" class="icon" (click)="goToMyProfilePage()">
+		    </div>
+		</ion-col>
+	</ion-row>
+</ion-header>
+
+<ion-content padding-top class="appointment">
+
+	<div class=" horizon-line">
+		<ion-label class="profile-display ">Name</ion-label>
+		<ion-input class="profile-display mid-font" [(ngModel)]="member.firstName" placeholder="Member name" disabled></ion-input>
+		<ion-input class="profile-display mid-font" [(ngModel)]="member.lastName" placeholder="Member name" disabled></ion-input>
+		<img src="../../assets/img/profile/Edit.png" class="profile-icon contact-profile">
+	</div>
+	
+	<div class=" horizon-line" >
+		<div class="profile-icon margin">
+			<ion-label class="profile-display ">Gender</ion-label>
+			<ion-input placeholder="Male" class="margin" disabled>{{member.gender}}</ion-input>
+		</div>
+	</div>
+
+	<div class=" horizon-line" >
+		<div class="profile-icon margin">
+			<ion-label class="profile-display ">Date of Birth</ion-label>
+			<ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="member.birthDate" placeholder="MM/DD/YYYY" class="margin" disabled>
+			</ion-datetime>
+		</div>
+	</div>
+
+	<div class=" horizon-line" >
+		<div class="profile-icon margin">
+			<ion-label class="profile-display ">Height</ion-label>
+			<ion-input placeholder="5.10" class="margin" disabled>{{member.height}}</ion-input>
+		</div>
+	</div>
+
+	<div class=" horizon-line" >
+		<div class="profile-icon margin">
+			<ion-label class="profile-display ">Weight</ion-label>
+			<ion-input placeholder="65" class="margin" disabled>{{member.weight}}</ion-input>
+		</div>
+	</div>
+
+	<div class=" horizon-line" >
+		<div class="profile-icon margin">
+			<ion-label class="profile-display ">Blood Group</ion-label>
+			<ion-input placeholder="AB+" class="margin" disabled>{{member.bloodGroup}}</ion-input>
+		</div>
+	</div>
+
+	<div class=" horizon-line" >
+		<div class="profile-icon margin">
+			<ion-label class="profile-display ">Allergies (Optional)</ion-label>
+			<img src="../../assets/img/profile/Edit.png" class="profile-icon contact-profile">
+		</div>
+	</div>
+
+	<div class=" horizon-line" >
+		<div class="profile-icon margin">
+			<ion-textarea rows="4" [(ngModel)]="member.allergies" placeholder="Explain briefly, your allergies." disabled></ion-textarea>
+		</div>
+	</div>
+
+	<div class=" horizon-line" >
+		<div class="profile-icon margin">
+			<ion-label class="profile-display ">Medical History (Optional)</ion-label>
+			<img src="../../assets/img/profile/Edit.png" class="profile-icon contact-profile">
+		</div>
+	</div>
+
+	<div class=" horizon-line" >
+		<div class="profile-icon margin">
+			<ion-textarea rows="4" [(ngModel)]="member.medicalHistory" placeholder="Explain briefly, your medical history." disabled></ion-textarea>
+		</div>
+	</div>
+
+</ion-content>
+
+<ion-footer no-shadow>
+	<ion-toolbar position="bottom">
+		<ion-row>
+			<ion-col>
+				<button ion-button color="primary" block (click)="goToAddMemberPage1()">Back</button>
+			</ion-col>
+			<ion-col>
+				<button ion-button color="primary" block (click)="save()">Save</button>
+			</ion-col>
+		</ion-row>
+	</ion-toolbar>
+</ion-footer>

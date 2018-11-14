@@ -1,0 +1,68 @@
+page-members-list {
+    
+    .members {
+
+        .dropdown-width {
+            max-width: 100%;
+        }
+
+        .item-cover {
+		    left: 0;
+		    top: 0;
+		    position: absolute;
+		    width: 100%;
+		    height: 0%;
+		    background: transparent;
+		    cursor: pointer;
+		}
+
+        .font {
+            font-size: 25px;
+            font-weight: bold;
+            color: dimgray;
+        }
+
+        .icon {
+            text-align: right;
+            max-width: 50px;    
+        }
+
+        .margin {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .horizon-line {
+            border-bottom: 1px solid #eee;
+            padding-left: 10px;
+
+            .max-wid {
+            	max-width: 90%;
+            }
+        }
+
+        .margin-md {
+            margin-left: 40px;
+        }
+
+        .mid-font {
+            font-size: 18px;
+        }
+
+        .profile-display {
+            position: absolute;
+
+            .size {
+                max-width: 25px;
+            }
+        }
+
+        .profile-icon {
+            position: relative;
+
+            .margin {
+                margin-left: 25%;
+            }
+        }
+    }
+}

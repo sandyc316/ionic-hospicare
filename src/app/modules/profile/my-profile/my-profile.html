@@ -1,0 +1,92 @@
+<ion-header no-shadow>
+	<ion-row class="header-background">
+		<ion-col>
+			<ion-navbar hideBackButton="true">
+	        	<ion-title class=" ">My Profile</ion-title>
+	    	</ion-navbar>
+		</ion-col>
+	</ion-row>
+</ion-header>
+
+<ion-content padding-top class="profile">
+
+	<div class="align-center horizon-line">
+		<!-- <img src="{{api.url+'/'+'assets/img/profile/default.png'}}" class="pic"> -->
+		<img src="/assets/img/profile/default.png" class="pic">
+		<ion-label class=" font">{{patientProfile?.firstName}} {{patientProfile?.lastName}}</ion-label>
+		<ion-label class=" mid-font">{{patientProfile?.phone}}</ion-label>
+	</div>
+
+	<div class="margin horizon-line" >
+		<div class="profile-display">
+			<img src="/assets/img/profile/Contact.png" class="margin size">
+		</div>
+		<div class="profile-icon align-margin">
+			<ion-label class="margin" (click)="goToContactDetailsPage()">Contact Details</ion-label>
+		</div>
+	</div>
+
+	<div class="margin horizon-line" (click)="goToMedicalProfilePage()">
+		<div class="profile-display">
+			<img src="/assets/img/profile/Medical.png" class="margin size">
+		</div>
+		<div class="profile-icon margin">
+			<ion-label class="margin">Medical Profile</ion-label>
+		</div>
+	</div>
+
+	<div class="margin horizon-line" (click)="goToAddmembersPage()">
+		<div class="profile-display">
+			<img src="/assets/img/profile/add-member.png" class="margin size">
+		</div>
+		<div class="profile-icon margin">
+			<ion-label class="margin">Members</ion-label>
+		</div>
+	</div>
+
+	<div class="margin horizon-line" (click)="goToLanguagePage()">
+		<div class="profile-display">
+			<img src="/assets/img/profile/Language.png" class="margin size">
+		</div>
+		<div class="profile-icon margin">
+			<ion-label class="margin">Language</ion-label>
+		</div>
+	</div>
+
+	<div class="margin horizon-line" (click)="goToMyWalletPage()">
+		<div class="profile-display">
+			<img src="/assets/img/profile/Wallet.png" class="margin size">
+		</div>
+		<div class="profile-icon margin">
+			<ion-label class="margin">My Wallet</ion-label>
+		</div>
+	</div>
+
+	<div class="margin horizon-line" (click)="goToFeedbackPage()">
+		<div class="profile-display">
+			<img src="/assets/img/profile/Feedback.png" class="margin size">
+		</div>
+		<div class="profile-icon margin">
+			<ion-label class="margin">Feedback</ion-label>
+		</div>
+	</div>
+
+	<div class="margin horizon-line" (click)="goToHomePage()">
+		<div class="profile-display">
+			<img src="/assets/img/profile/Home.png" class="margin size">
+		</div>
+		<div class="profile-icon margin">
+			<ion-label class="margin">Back to Home</ion-label>
+		</div>
+	</div>
+
+	<div class="margin horizon-line" (click)="goToLoginPage()">
+		<div class="profile-display">
+			<img src="/assets/img/profile/Home.png" class="margin size">
+		</div>
+		<div class="profile-icon margin">
+			<ion-label class="margin">Logout</ion-label>
+		</div>
+	</div>
+	
+</ion-content>

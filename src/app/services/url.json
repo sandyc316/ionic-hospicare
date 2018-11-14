@@ -1,0 +1,4 @@
+{
+	"patientURL" : "http://0.0.0.0:3000/patients/",
+	"paymentURL" : "http://0.0.0.0:3010/"
+}

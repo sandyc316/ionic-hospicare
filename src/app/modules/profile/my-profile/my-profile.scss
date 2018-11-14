@@ -1,0 +1,60 @@
+page-my-profile {
+
+	.profile {
+
+	    .dropdown-width {
+	        max-width: 100%;
+	    }
+
+	    .font {
+	        font-size: 25px;
+	        font-weight: bold;
+	        color: dimgray;
+	    }
+
+	    .icon {
+	        text-align: right;
+	        max-width: 50px;    
+	    }
+
+	    .margin {
+	        margin-right: 10px;
+	    }
+
+	    .horizon-line {
+	        border-bottom: 1px solid #eee;
+	        padding: 2px 20px 2px 20px;
+	    }
+
+	    .margin-md {
+	        margin-left: 40px;
+	    }
+
+	    .mid-font {
+	        font-size: 18px;
+	    }
+
+	    .pic {
+			border-radius: 50%;
+			height: 150px;
+    		max-width: 150px;
+		}
+
+		.profile-display {
+			position: absolute;
+			margin-top: 10px;
+
+			.size {
+				max-width: 25px;
+			}
+		}
+
+		.profile-icon {
+			position: relative;
+
+			.margin {
+				margin-left: 25%;
+			}
+		}
+	}
+}

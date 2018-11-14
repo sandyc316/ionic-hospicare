@@ -1,0 +1,37 @@
+page-doctor-at-home1 {
+
+    .doctor-at-home {
+
+        .horizon-line {
+            border-bottom: 1px solid #eee;
+            padding: 0px 0px 10px 10px;
+
+            .select-md {
+                padding: 13px 0px 5px 5px;
+            }
+        }
+        
+        .display {
+            position: absolute;
+        }
+
+        .font {
+            font-size: 25px;
+            font-weight: bold;
+            color: dimgray;
+        }
+
+        .icon {
+            position: relative;
+
+            .margin {
+                margin-left: 25%;
+            }
+        }
+
+        .mid-font {
+            font-size: 18px;
+        }
+    }
+}
+

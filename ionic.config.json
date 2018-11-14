@@ -1,0 +1,30 @@
+{
+  "name": "familycare",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular",
+  "proxies": [
+    {
+      "path": "/api/patient",
+      "proxyUrl": "http://localhost:3000"
+    },
+    {
+      "path": "/api/doctor",
+      "proxyUrl": "http://localhost:3001"
+    },
+    {
+      "path": "/api/appointment",
+      "proxyUrl": "http://localhost:3003"
+    },
+    {
+      "path": "/api/appointment-at-home",
+      "proxyUrl": "http://localhost:3004"
+    },
+    {
+      "path": "/api/report",
+      "proxyUrl": "http://localhost:3005"
+    }
+  ],
+  "pro_id": "9d8c4c4d"
+}

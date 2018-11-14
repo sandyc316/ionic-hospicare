@@ -1,0 +1,85 @@
+<ion-header no-shadow>
+	<ion-row class="header-background">
+		<ion-col>
+			<ion-navbar hideBackButton="true">
+	        	<ion-title >Doctor at Home</ion-title>
+	    	</ion-navbar>
+		</ion-col>
+		<ion-col>
+		    <div class="align">
+		   		<img src="assets/img/Menu.png" class="icon" (click)="goToMyHomePage()">
+		    </div>
+		</ion-col>
+	</ion-row>
+</ion-header>
+
+<ion-content padding-top class="doctor-at-home">
+
+	<div class=" horizon-line">
+		<ion-label class="display margin-left-5 font">Select Patient</ion-label>
+		<img src="../../assets/img/doctor-at-home/Add-item.png" class="profile-icon contact-profile">
+	</div>
+
+	<div class="horizon-line">
+		<ion-item>
+			<ion-select [(ngModel)]="selectedMember" placeholder="Select your member" required>
+				<ion-option *ngFor="let member of members" [value]="member.memberId">{{member.name}} {{member.relationship}}</ion-option>
+			</ion-select>
+		</ion-item>
+	</div>
+	<div class=" horizon-line">
+		<ion-label class="display margin-left-5 font">Select Address</ion-label>
+		<img src="../../assets/img/doctor-at-home/Add-item.png" class="profile-icon contact-profile">
+	</div>
+
+	<div class="horizon-line">
+		<ion-item>
+			<ion-select [(ngModel)]="selectedAddress">
+				<ion-option *ngFor="let address of addresses" [value]="address.id">{{address.address}}</ion-option>
+			</ion-select>
+		</ion-item>
+	</div>
+
+	<div class=" horizon-line">
+		<ion-label class="display margin-left-5 font">Select Date</ion-label>
+		<img src="../../assets/img/doctor-at-home/Add-item.png" class="profile-icon contact-profile">
+	</div>
+	<ion-item>
+		<ion-label>Date</ion-label>
+		<ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="visitDate"></ion-datetime>
+	</ion-item>
+	<div class=" horizon-line">
+		<ion-label class="display margin-left-5 font">Select Time</ion-label>
+		<img src="../../assets/img/doctor-at-home/Add-item.png" class="profile-icon contact-profile">
+	</div>
+	<ion-item >
+		<ion-label>Time</ion-label>
+		<ion-datetime #datePicker
+		(ionCancel)="visitDate=undefined" displayFormat="HH:mm" [(ngModel)]="visitTime"></ion-datetime>
+	</ion-item>
+
+
+	<div class=" horizon-line">
+		<ion-label class=" font">Reason for consultation</ion-label>
+	</div>
+
+	<div class=" horizon-line" >
+		<div class="profile-icon margin">
+			<ion-textarea rows="4" [(ngModel)]="visitReason" placeholder="Explain briefly, your symptoms, or concerns."></ion-textarea>
+		</div>
+	</div>
+	
+</ion-content>
+
+<ion-footer no-shadow>
+	<ion-toolbar position="bottom">
+		<ion-row>
+			<ion-col>
+				<button ion-button color="primary" block (click)="goToMyHomePage()">Back</button>
+			</ion-col>
+			<ion-col>
+				<button ion-button color="primary" block (click)="goToDoctorAtHomePage2()">Continue</button>
+			</ion-col>
+		</ion-row>
+	</ion-toolbar>
+</ion-footer>

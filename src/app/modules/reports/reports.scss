@@ -1,0 +1,26 @@
+page-reports {
+	
+	.reports {
+	    .horizon-line {
+	        border-bottom: 1px solid #eee;
+	        padding-left: 10px;
+
+	        .profile-display {
+	            position: absolute;
+
+	            .size {
+	                max-width: 25px;
+	            }
+	        }
+
+	        .profile-icon {
+	            position: relative;
+
+	            .margin {
+	                margin-left: 25%;
+	            }
+	        }
+	    }
+
+	}
+}

@@ -1,0 +1,111 @@
+<ion-header no-shadow>
+	<ion-row class="header-background">
+		<ion-col>
+			<ion-navbar hideBackButton="true">
+	        	<ion-title class=" ">My Profile</ion-title>
+	    	</ion-navbar>
+		</ion-col>
+		<ion-col>
+		    <div class="align">
+		   		<img src="assets/img/Menu.png" class="icon" (click)="goToMyProfilePage()">
+		    </div>
+		</ion-col>
+	</ion-row>
+</ion-header>
+
+<ion-content padding-top class="medical-profile">
+
+	<div class=" horizon-line">
+		<ion-label class="profile-display mid-font">Medical Profile</ion-label>
+		<img src="../../assets/img/profile/Edit.png" class="profile-icon contact-profile">
+	</div>
+
+	<div class=" horizon-line" >
+		<div class="profile-icon margin">
+			<ion-label class="profile-display ">Gender</ion-label>
+			<ion-select [(ngModel)]="medicalProfile.gender" class="margin" placeholder="Gender" required>
+				<ion-option value="Male" >Male</ion-option>
+				<ion-option value="Female" >Female</ion-option>
+				<ion-option value="Other" >Transgender</ion-option>
+			</ion-select>
+		</div>
+	</div>
+	<div class=" horizon-line" >
+		<div class="profile-icon margin">
+			<ion-label class="profile-display ">Date of Birth</ion-label>
+			<ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="medicalProfile.birthDate" placeholder="MM/DD/YYYY" class="margin">
+			</ion-datetime>
+		</div>
+	</div>
+
+	<div class=" horizon-line" >
+		<div class="profile-icon margin">
+			<ion-label class="profile-display ">Height</ion-label>
+			<ion-input type="number" required [(ngModel)]="medicalProfile.height" placeholder="Height" class="margin"></ion-input>
+		</div>
+	</div>
+
+	<div class=" horizon-line" >
+		<div class="profile-icon margin">
+			<ion-label class="profile-display ">Weight</ion-label>
+			<ion-input type="number" required [(ngModel)]="medicalProfile.weight" placeholder="Weight in Kg" class="margin"></ion-input>
+		</div>
+	</div>
+
+	<div class=" horizon-line" >
+		<div class="profile-icon margin">
+			<ion-label class="profile-display ">Blood Group</ion-label>
+			<ion-select [(ngModel)]="medicalProfile.bloodGroup" class="margin" placeholder="Blood Group" required>
+				<ion-option value="A+ve">A+ve</ion-option>
+				<ion-option value="A-ve">A-ve</ion-option>
+				<ion-option value="B+ve">B+ve</ion-option>
+				<ion-option value="B-ve">B-ve</ion-option>
+				<ion-option value="AB+ve">AB+ve</ion-option>
+				<ion-option value="AB-ve">AB-ve</ion-option>
+				<ion-option value="O+ve">O+ve</ion-option>
+				<ion-option value="AB-ve">AB-ve</ion-option>
+				<ion-option value="other">Other</ion-option>
+			</ion-select>
+		</div>
+	</div>
+
+	<div class=" horizon-line" >
+		<div class="profile-icon margin">
+			<ion-label class="profile-display ">Allergies (Optional)</ion-label>
+			<img src="../../assets/img/profile/Edit.png" class="profile-icon contact-profile">
+		</div>
+	</div>
+
+	<div class=" horizon-line" >
+		<div class="profile-icon margin">
+			<ion-textarea rows="4" [(ngModel)]="medicalProfile.allergies" placeholder="Explain briefly, your allergies."></ion-textarea>
+		</div>
+	</div>
+
+	<div class=" horizon-line" >
+		<div class="profile-icon margin">
+			<ion-label class="profile-display ">Medical History (Optional)</ion-label>
+			<img src="../../assets/img/profile/Edit.png" class="profile-icon contact-profile">
+		</div>
+	</div>
+
+	<div class=" horizon-line" >
+		<div class="profile-icon margin">
+			<ion-textarea rows="4" [(ngModel)]="medicalProfile.medicalHistory" placeholder="Explain briefly, your medical history."></ion-textarea>
+		</div>
+	</div>
+
+</ion-content>
+
+<ion-footer no-shadow>
+	<ion-toolbar position="bottom">
+		<ion-row>
+			<ion-col>
+				<button ion-button color="primary" block (click)="goToMyProfilePage()">Back</button>
+			</ion-col>
+			<ion-col>
+				<button ion-button color="primary" block (click)="save()">Save</button>
+			</ion-col>
+		</ion-row>
+	</ion-toolbar>
+</ion-footer>

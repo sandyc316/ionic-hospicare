@@ -1,0 +1,64 @@
+<ion-header no-shadow>
+	<ion-row class="header-background">
+		<ion-col>
+			<ion-navbar hideBackButton="true">
+	        	<ion-title >Doctor at Home</ion-title>
+	    	</ion-navbar>
+		</ion-col>
+		<ion-col>
+		    <div class="align">
+		   		<img src="assets/img/Menu.png" class="icon" (click)="goToMyHomePage()">
+		    </div>
+		</ion-col>
+	</ion-row>
+</ion-header>
+
+<ion-content padding-top class="doctor-at-home">
+	
+	<div class=" horizon-line">
+		<ion-label class=" font">Summary</ion-label>
+		<ion-label class=" mid-font">Doctor visit requested at:</ion-label>
+		<ion-label *ngIf="address">{{address.tag}}</ion-label>
+		<p *ngIf="address">{{address.address}}</p>
+	</div>
+
+	<div class=" horizon-line" >
+		<ion-label class="mid-font">Requested for:</ion-label>
+		<ion-label *ngIf="member">{{member.name}}</ion-label>
+	</div>
+
+	<div class=" horizon-line" >
+		<ion-label class="mid-font">Emergency level:</ion-label>
+		<ion-label >{{emergency}}Normal</ion-label>
+	</div>
+
+	<div class=" horizon-line" >
+		<ion-label class="mid-font">Time:</ion-label>
+		<ion-label >{{visitDate}}</ion-label>
+		<ion-label >{{visitTime}}</ion-label>
+	</div>
+
+	<div class=" horizon-line" >
+		<ion-label class="mid-font">Reason for Consultation:</ion-label>
+		<ion-label >{{visitReason}}</ion-label>
+	</div>
+
+	<div class=" horizon-line" >
+		<ion-label class="mid-font">Consultation Charge:</ion-label>
+		<ion-label >INR {{consultationFees}}</ion-label>
+	</div>
+
+</ion-content>
+
+<ion-footer no-shadow>
+	<ion-toolbar position="bottom">
+		<ion-row>
+			<ion-col>
+				<button ion-button color="primary" block (click)="goToDoctorAtHomePage1()">Back</button>
+			</ion-col>
+			<ion-col>
+				<button ion-button color="primary" block (click)="goToPaymentPage()">Pay</button>
+			</ion-col>
+		</ion-row>
+	</ion-toolbar>
+</ion-footer>
